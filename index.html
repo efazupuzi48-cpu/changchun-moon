@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#071426">
+<meta name="description" content="《长春望月》——给世龙的中秋月笺">
+<title>长春望月 · 给世龙</title>
+<style>
+:root{--night:#071426;--night2:#0d2139;--gold:#d9bd7b;--paper:#f5efdf;--ink:#293548;--muted:#a3afbd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--night);color:#f4ead2;font-family:"Noto Serif SC","Songti SC","STSong","Microsoft YaHei",serif}
+.page{min-height:100vh;overflow:hidden;background:radial-gradient(circle at 50% 12%,#d6bb7614,transparent 23%),linear-gradient(#061123,#0a1b31 58%,#071426)}
+.hero{height:100svh;min-height:650px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.stars{position:absolute;inset:0}.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff5d4;opacity:.5;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.12;transform:scale(.5)}}
+.moon{position:absolute;top:9%;left:50%;transform:translateX(-50%);width:min(50vw,230px);height:min(50vw,230px);min-width:150px;min-height:150px;border-radius:50%;background:radial-gradient(circle at 31% 28%,#fffdf0,#f5e4b7 53%,#d3b573);box-shadow:0 0 55px #e8ce8c44,0 0 150px #e8ce8c18}
+.crater{position:absolute;border-radius:50%;background:#a88d5c22}.c1{width:27px;height:27px;left:28%;top:30%}.c2{width:18px;height:18px;left:58%;top:20%}.c3{width:37px;height:37px;left:53%;top:58%}.c4{width:14px;height:14px;left:30%;top:68%}
+.hero-content{position:relative;z-index:2;margin-top:25vh;padding:20px}.eyebrow{font:10px Arial,sans-serif;letter-spacing:.42em;color:#bfae82}
+h1{font-size:clamp(52px,14vw,92px);font-weight:400;letter-spacing:.16em;margin:18px 0 9px;text-shadow:0 8px 30px #0008}
+.sub{font-size:13px;letter-spacing:.18em;color:#bdc6d2;line-height:2}.btn{margin-top:30px;padding:12px 28px;border:1px solid #bca66f;background:#0b1930dd;color:#e8d6a5;letter-spacing:.25em;font-size:12px;cursor:pointer}
+.btn:hover{background:#d1b77b;color:#071426}.city{position:absolute;bottom:0;left:0;right:0;height:21%;background:linear-gradient(transparent,#071426 45%)}
+.city:after{content:"";position:absolute;left:0;right:0;bottom:0;height:58%;background:linear-gradient(90deg,#061123 0 8%,transparent 8% 11%,#061123 11% 17%,transparent 17% 21%,#061123 21% 30%,transparent 30% 34%,#061123 34% 40%,transparent 40% 44%,#061123 44% 52%,transparent 52% 56%,#061123 56% 64%,transparent 64% 69%,#061123 69% 76%,transparent 76% 80%,#061123 80% 88%,transparent 88% 92%,#061123 92% 100%)}
+.hero-foot{position:absolute;bottom:22px;font:9px Arial,sans-serif;letter-spacing:.35em;color:#617086}
+.section{max-width:900px;margin:auto;padding:78px 20px}
+.paper{position:relative;background:var(--paper);color:var(--ink);padding:54px 27px;box-shadow:0 28px 90px #0007}.paper:before{content:"";position:absolute;inset:12px;border:1px solid #a88d5c55}
+.seal{position:absolute;right:29px;top:26px;border:1px solid #9d705b;color:#9d705b;padding:5px;font-size:10px;line-height:1.1}.label{text-align:center;color:#8d7750;font-size:10px;letter-spacing:.42em}
+.poem-title{text-align:center;font-size:28px;letter-spacing:.18em;margin:15px 0 30px}.poem{text-align:center;font-size:18px;line-height:2.35;letter-spacing:.14em}.gap{height:13px}
+.divider{width:45px;height:1px;background:#b89d69;margin:33px auto}.note-title{text-align:center;color:#8d7750;font-size:17px;letter-spacing:.25em;margin-bottom:17px}
+.note{text-align:center;font-size:14px;line-height:2.2;letter-spacing:.07em;color:#687384}.signature{text-align:right;margin-top:28px;font-size:14px;color:#687384;letter-spacing:.12em}
+.voice{padding-top:15px}.kicker{text-align:center;font:10px Arial,sans-serif;letter-spacing:.4em;color:#8997a9}.title{text-align:center;font-size:24px;font-weight:400;letter-spacing:.18em;margin:13px 0}
+.desc{text-align:center;color:#8e9aaa;font-size:12px;line-height:2;margin-bottom:30px}.voice-card{max-width:600px;margin:auto;border:1px solid #cdb9872c;background:linear-gradient(145deg,#112946b5,#071426dd);padding:25px;text-align:center}
+.voice-card p{font-size:14px;color:#b6bfcb;line-height:2;margin:0 0 20px}.audio{width:100%;height:42px}
+.food{padding-top:48px}.food-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:35px}
+.food-card{min-height:205px;padding:25px 10px;border:1px solid #cdb9872b;background:linear-gradient(160deg,#162f4c99,#071426cc);text-align:center;cursor:pointer;transition:.3s}
+.food-card:hover{transform:translateY(-6px);border-color:#cdb98766}.logo{width:80px;height:80px;margin:0 auto 17px;border-radius:50%;border:1px solid #dabe785c;display:flex;align-items:center;justify-content:center;font-size:37px;background:radial-gradient(circle,#dabe7818,transparent 68%)}
+.food-card h3{font-size:15px;font-weight:400;letter-spacing:.12em;color:#ead9ac;margin:0 0 8px}.food-card p{font-size:11px;color:#8997a9;margin:0;line-height:1.8}
+.final{text-align:center;padding:75px 20px 110px}.line{width:55px;height:1px;background:#bfa66e;margin:0 auto 28px}
+.ancient{font-size:clamp(24px,6vw,36px);letter-spacing:.12em;line-height:1.8;margin:0;color:#ead9aa}.wish{font-size:13px;color:#aeb8c5;line-height:2.2;letter-spacing:.08em;margin-top:22px}
+.final strong{display:block;margin-top:31px;font-weight:400;font-size:25px;letter-spacing:.2em;color:#e6ca83}.footer{margin-top:30px;font:9px Arial,sans-serif;letter-spacing:.35em;color:#56667c}
+.modal{position:fixed;inset:0;z-index:20;background:#030b18dd;backdrop-filter:blur(9px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:.3s}
+.modal.show{opacity:1;pointer-events:auto}.modal-box{width:min(430px,100%);background:var(--paper);color:var(--ink);padding:40px 27px 34px;text-align:center;position:relative}
+.modal-box h2{font-weight:400;font-size:23px;margin:0 0 14px}.modal-box p{font-size:14px;line-height:2.05;color:#687384;margin:0}.close{position:absolute;right:12px;top:8px;border:0;background:none;color:#777;font-size:22px}
+@media(max-width:680px){.food-grid{grid-template-columns:repeat(2,1fr);gap:10px}.food-card{min-height:190px;padding:22px 8px}.logo{width:68px;height:68px;font-size:31px}.paper{padding:48px 21px}}
+@media(min-width:681px){.paper{padding-left:80px;padding-right:80px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="stars" id="stars"></div>
+<section class="hero">
+<div class="moon"><i class="crater c1"></i><i class="crater c2"></i><i class="crater c3"></i><i class="crater c4"></i></div>
+<div class="hero-content"><div class="eyebrow">MID-AUTUMN · 2026 · CHANGCHUN</div><h1>长春望月</h1><div class="sub">一轮明月 · 四方人间 · 一封月笺</div><button class="btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">翻开月笺　↓</button></div>
+<div class="city"></div><div class="hero-foot">TO SHILONG · MID-AUTUMN</div>
+</section>
+
+<section class="section" id="letter">
+<div class="paper"><div class="seal">中<br>秋</div><div class="label">月笺 · YUE JIAN</div><div class="poem-title">《长春望月》</div>
+<div class="poem">长春秋夜渐生凉，<br>一轮明月照客窗。<br>千里故园今夜念，<br>河南卤面入梦香。<div class="gap"></div>苏州双亲应安好，<br>山东故友各安康。<br>此去天涯虽万里，<br>同看明月共清光。</div>
+<div class="divider"></div><div class="note-title">中秋寄语</div><div class="note">月有盈亏，人有聚散，<br>所幸山长水远，月色相通。<br><br>愿你在长春，<br>有灯可归，有事可忙，有人可念；<br>也愿千里之外的家与故人，<br>都在这轮月色里，安然无恙。</div>
+<div class="signature">金世龙，中秋快乐。</div></div>
+</section>
+
+<section class="section voice">
+<div class="kicker">A LITTLE VOICE MESSAGE</div><div class="title">还有一件小事</div>
+<div class="desc">文字说起来总归有点正式，<br>所以剩下的话，就直接说给你听吧。</div>
+<div class="voice-card"><p>来自千里之外的一段语音</p>
+<audio class="audio" controls preload="metadata" aria-label="中秋语音留言"><source src="voice.mp3" type="audio/mpeg">你的浏览器暂不支持音频播放。</audio></div>
+</section>
+
+<section class="section food">
+<div class="kicker">FOUR PLACES · FOUR FLAVORS</div><div class="title">四方月色</div>
+<div class="desc">没有路线，也不必相连。<br>四个熟悉的味道，各自在这一轮月亮下安静发光。</div>
+<div class="food-grid">
+<div class="food-card" onclick="show('🍜','河南 · 卤面','走得再远，也总有一种味道，一入口便知道是家。')"><div class="logo">🍜</div><h3>河南 · 卤面</h3><p>故园 · 家味</p></div>
+<div class="food-card" onclick="show('🥩','吉林 · 锅包肉','长春的秋夜，来一盘热腾腾的锅包肉，也算给异乡的日子添一点烟火气。')"><div class="logo">🥩</div><h3>吉林 · 锅包肉</h3><p>长春 · 此时此地</p></div>
+<div class="food-card" onclick="show('🍜','江苏 · 苏式汤面','江南的味道清淡而温柔。愿远在苏州的父母，岁岁安康。')"><div class="logo">🍜</div><h3>江苏 · 苏式汤面</h3><p>苏州 · 双亲安好</p></div>
+<div class="food-card" onclick="show('🌿','山东 · 大葱','山东的朋友，各自在忙碌的日子里。山海虽远，故友仍在。')"><div class="logo">🌿</div><h3>山东 · 大葱</h3><p>故友 · 各自安好</p></div>
+</div>
+</section>
+
+<section class="final"><div class="line"></div><p class="ancient">但愿人长久，千里共婵娟。</p><p class="wish">愿你在长春的这个中秋夜，<br>抬头有月，低头有光。</p><strong>世龙，中秋快乐。</strong><div class="footer">MID-AUTUMN · 2026</div></section>
+</div>
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="mi" style="font-size:34px;margin-bottom:12px"></div><h2 id="mt"></h2><p id="mp"></p></div></div>
+<script>
+for(let i=0;i<100;i++){let s=document.createElement('i');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*76+'%';s.style.animationDelay=Math.random()*4+'s';document.getElementById('stars').appendChild(s)}
+function show(i,t,p){document.getElementById('mi').textContent=i;document.getElementById('mt').textContent=t;document.getElementById('mp').textContent=p;document.getElementById('modal').classList.add('show')}
+function closeModal(){document.getElementById('modal').classList.remove('show')}
+</script>
+</body>
+</html>
